@@ -10,15 +10,10 @@
         <link href="atom.xml" rel="alternate" title="Atom feed" type="application/atom+xml">
         <link href="feed.json" rel="alternate" title="JSON feed" type="application/json">
 
-        <!--
-             Uncomment the following <link> tag if you set up a Webmention receiver
-             using plerdwatcher. Update the port number as needed.
-        -->
-        <!--
-             [% webmention_uri = plerd.base_uri.clone %]
-             [% old_port = webmention_uri.port( 4000 ) %]
-             <link rel="webmention" href="[% webmention_uri %]" />
-        -->
+
+        [% webmention_uri = "https://webmentions.barbarito.me" %]
+        <link rel="webmention" href="[% webmention_uri %]" />
+
 
         <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
         [% IF context_post %]

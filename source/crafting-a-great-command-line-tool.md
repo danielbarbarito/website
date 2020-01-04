@@ -1,6 +1,6 @@
 title: Crafting a Great Command Line Tool
 time: 2018-11-08T13:03:32-05:00
-published_filename: 2020-01-04-crafting-a-great-command-line-tool.html
+published_filename: 2018-11-08-crafting-a-great-command-line-tool.html
 guid: 84B349C4-2F1C-11EA-869E-909E2C992D10
 tags: best-practice
 
