@@ -22,7 +22,6 @@ Let’s assume we are working with a command line tool called deploy_app. When I
 
 <pre>
 <code class="language-shell-session">
-void main() {}
 deploy_app - Uploads the latest version of 'app' to the server.
 
 Usage:
