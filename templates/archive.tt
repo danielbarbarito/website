@@ -11,7 +11,7 @@
         [% IF current_month %]
             </ul>
         [% END %]
-        <h2>[% post.month_name %] [% post.year %]</h2>
+        <h3>[% post.month_name %] [% post.year %]</h3>
         <ul>
     [% END %]
     <li><a href="[% post.uri %]">[% post.title %]</a></li>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>[% title %]</title>
+        <title>Dan Barbarito</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
               rel="stylesheet">
@@ -15,15 +15,13 @@
              using plerdwatcher. Update the port number as needed.
         -->
         <!--
-             [% webmention_uri = plerd.base_uri.clone %]
-             [% old_port = webmention_uri.port( 4000 ) %]
-             <link rel="webmention" href="[% webmention_uri %]" />
+             
+             
+             <link rel="webmention" href="https://barbarito.me:4000" />
         -->
 
         <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
-        [% IF context_post %]
-            [% context_post.social_meta_tags %]
-        [% END %]
+        
         <style>
          .page-header {
              padding: 10px 0;
@@ -57,7 +55,7 @@
     <body>
         <nav class="navbar navbar-light navbar-expand-lg bg-light">
             <a class="navbar-brand" href="/">
-                [% plerd.title %]
+                Dan Barbarito
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -73,16 +71,85 @@
         <div style="padding-top: 20px" class="container">
             <div class="row">
                 <div class="col-sm-9">
-                    [% content %]
+                    
+
+
+<div class="post h-entry">
+    <div class="title page-header"><h1><a href="https://barbarito.me/2020-01-04-crafting-a-great-command-line-tool.html"><span class="p-name">Crafting a Great Command Line Tool</span><br /><small>November 8, 2018</small></a></h1></div>
+
+    <data class="dt-published" value="2018-11-08 13:03:32"></data>
+    <data class="p-author h-card">
+        <data class="p-name" value="Dan Barbarito"></data>
+    </data>
+    <data class="p-summary" value="I have created many command line tools and scripts throughout my career. Though the importance of these applications vary greatly (some are vital to achieve certain business goals, while some are simple and may only be run once or twice), the core design of these applications should remain relatively the same."></data>
+    <data class="u-url u-uid" value="https://barbarito.me/2020-01-04-crafting-a-great-command-line-tool.html"></data>
+
+    <div class="body e-content"><p>I have created many command line tools and scripts throughout my career. Though the importance of these applications vary greatly (some are vital to achieve certain business goals, while some are simple and may only be run once or twice), the core design of these applications should remain relatively the same.</p>
+
+<p><em>What do you mean by design?</em></p>
+
+<p>Design in this case is the style in which the tool is coded, the way the tool is presented to the user, and the functionality the tool provides.</p>
+
+<p><strong>Coding Style</strong></p>
+
+<p>Commenting your code, writing self-explaining code, and using descriptive variable names are extremely important tenants to abide by when writing command line tools. This point is self-explanitory as it is not unique to command line tools. It is worth reiterating for two reasons, however. One reason is that the ability to have a general idea of what the tool does by looking at its code is invaluable. Another reason is that people often write sloppy code when writing quick, one-off scripts.</p>
+
+<p><strong>Presentation</strong></p>
+
+<p>Presentation of a command line tool is generally set by convention. Convention, in the world of command line tools, is key.</p>
+
+<p>Let’s assume we are working with a command line tool called deploy_app. When I type deploy_app —help I should be shown a help message with an example of how to use the tool and all available options that I have access to. This is a convention that has worked well for decades. It is something that users are used to, and it is something that is expected. Not following these conventions is not only lazy but it is dangerous. If I pass —help but the tool runs anyway, then that can cause a huge mess. Speaking of help messages, this is what one should look like…</p>
+
+<pre>
+<code class="language-shell-session">
+void main() {}
+deploy_app - Uploads the latest version of 'app' to the server.
+
+Usage:
+  deploy_app
+  deploy_app -h | --help
+  deploy_app --version
+
+Options:
+  -h --help     Show this screen.
+  --version     Show version.
+</code>
+</pre>
+
+<p><strong>Functionality</strong></p>
+
+<p>The final point I want to address is the functionality that the tool should provide. A command line tool should be able to be commanded. Giving users options is the key to creating a great command line tool. These options can be very minor, but they may mean the world for the people using the tool. For example, I recently created a tool to run automated tests on an application we were building. At the end of these tests, a slack message containing the results was sent out to a channel. Even though this feature was very useful, the option to —disable-slack was added to the tool to accomodate those who wanted those test results to be hidden for whatever reason. It is the little things that will make the users of your tool satisfied.</p>
+
+<p>I hope this post has inspired you to craft great command line tools, regardless of its size. Have you made a cool tool that uses these design principles? Reach out to me! I’d love to see it.</p>
+</div>
+    
+</div>
+
+
+
+
+    <div>
+        <hr />
+        
+        
+    </div>
+
+    
+
+
+
+
+
+
                 </div>
                 <div class="col-sm-3 sidebar">
                     <section>
                         <p>
-                            <a href="mailto:[% plerd.author_email %]">[% plerd.author_name %]</a> is a Senior Full Stack Developer @ IBM.
+                            <a href="mailto:dan@barbarito.me">Dan Barbarito</a> is a Senior Full Stack Developer @ IBM.
                         </p>
                         <div class="my-links">
                             <div>
-                                <a href="mailto:[% plerd.author_email %]" rel="me"><i class="far fa-envelope-open"></i></a>
+                                <a href="mailto:dan@barbarito.me" rel="me"><i class="far fa-envelope-open"></i></a>
                             </div>
                             <div>
                                 <a target="_blank" href="https://github.com/danielbarbarito" rel="me"><i class="fab fa-github"></i></a>
@@ -98,16 +165,16 @@
                             <div class="form-group">
                                 <input class="form-control" name="q" type="text" placeholder="Search this website" />
                             </div>
-                            <input name="sites" type="hidden" value="[% plerd.base_uri %]" />
+                            <input name="sites" type="hidden" value="https://barbarito.me" />
                             <button type="submit" class="btn btn-sm btn-default">Go</button>
                         </form>
                     </section>
                     <section>
                         <h1>Recent Posts</h1>
                         <ul>
-                            [% FOR post IN plerd.recent_posts %]
-                            <li><a href="[% post.uri %]">[% post.title %]</a></li>
-                [% END %]
+                            
+                            <li><a href="https://barbarito.me/2020-01-04-crafting-a-great-command-line-tool.html">Crafting a Great Command Line Tool</a></li>
+                
                         </ul>
                     </section>
                 </div>
@@ -126,3 +193,19 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/prism.min.js" integrity="sha256-HWJnMZHGx7U1jmNfxe4yaQedmpo/mtxWSIXvcJkLIf4=" crossorigin="anonymous"></script>
     </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+/* img.media-object { max-width: 64px } */
+</style>

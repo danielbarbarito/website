@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>[% title %]</title>
+        <title>Dan Barbarito: Archives </title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
               rel="stylesheet">
@@ -15,15 +15,13 @@
              using plerdwatcher. Update the port number as needed.
         -->
         <!--
-             [% webmention_uri = plerd.base_uri.clone %]
-             [% old_port = webmention_uri.port( 4000 ) %]
-             <link rel="webmention" href="[% webmention_uri %]" />
+             
+             
+             <link rel="webmention" href="https://barbarito.me:4000" />
         -->
 
         <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
-        [% IF context_post %]
-            [% context_post.social_meta_tags %]
-        [% END %]
+        
         <style>
          .page-header {
              padding: 10px 0;
@@ -57,7 +55,7 @@
     <body>
         <nav class="navbar navbar-light navbar-expand-lg bg-light">
             <a class="navbar-brand" href="/">
-                [% plerd.title %]
+                Dan Barbarito
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -73,16 +71,38 @@
         <div style="padding-top: 20px" class="container">
             <div class="row">
                 <div class="col-sm-9">
-                    [% content %]
+                    
+
+<div class="page-header">
+<h1>Archive</h1>
+</div>
+
+
+
+    
+    
+        
+        <h3>November 2018</h3>
+        <ul>
+    
+    <li><a href="https://barbarito.me/2020-01-04-crafting-a-great-command-line-tool.html">Crafting a Great Command Line Tool</a></li>
+    
+
+
+
+    </ul>
+
+
+
                 </div>
                 <div class="col-sm-3 sidebar">
                     <section>
                         <p>
-                            <a href="mailto:[% plerd.author_email %]">[% plerd.author_name %]</a> is a Senior Full Stack Developer @ IBM.
+                            <a href="mailto:dan@barbarito.me">Dan Barbarito</a> is a Senior Full Stack Developer @ IBM.
                         </p>
                         <div class="my-links">
                             <div>
-                                <a href="mailto:[% plerd.author_email %]" rel="me"><i class="far fa-envelope-open"></i></a>
+                                <a href="mailto:dan@barbarito.me" rel="me"><i class="far fa-envelope-open"></i></a>
                             </div>
                             <div>
                                 <a target="_blank" href="https://github.com/danielbarbarito" rel="me"><i class="fab fa-github"></i></a>
@@ -98,16 +118,16 @@
                             <div class="form-group">
                                 <input class="form-control" name="q" type="text" placeholder="Search this website" />
                             </div>
-                            <input name="sites" type="hidden" value="[% plerd.base_uri %]" />
+                            <input name="sites" type="hidden" value="https://barbarito.me" />
                             <button type="submit" class="btn btn-sm btn-default">Go</button>
                         </form>
                     </section>
                     <section>
                         <h1>Recent Posts</h1>
                         <ul>
-                            [% FOR post IN plerd.recent_posts %]
-                            <li><a href="[% post.uri %]">[% post.title %]</a></li>
-                [% END %]
+                            
+                            <li><a href="https://barbarito.me/2020-01-04-crafting-a-great-command-line-tool.html">Crafting a Great Command Line Tool</a></li>
+                
                         </ul>
                     </section>
                 </div>
@@ -126,3 +146,4 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/prism.min.js" integrity="sha256-HWJnMZHGx7U1jmNfxe4yaQedmpo/mtxWSIXvcJkLIf4=" crossorigin="anonymous"></script>
     </body>
 </html>
+
