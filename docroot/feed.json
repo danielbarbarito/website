@@ -13,6 +13,16 @@
 
     
     {
+      "id": "https://barbarito.me/reading.html",
+      "url": "https://barbarito.me/reading.html",
+      "title": "Reading",
+      "content_html": "<h3 id=\"currentlyreading:\">Currently Reading:</h3>\n\n<ol>\n<li>Test</li>\n<li>Test</li>\n</ol>\n",
+      "date_published": "2020-01-04T13:45:31-05:00",
+      "date_modified": "2020-01-04T14:41:07-05:00"
+    },
+
+    
+    {
       "id": "https://barbarito.me/2020-01-04-crafting-a-great-command-line-tool.html",
       "url": "https://barbarito.me/2020-01-04-crafting-a-great-command-line-tool.html",
       "title": "Crafting a Great Command Line Tool",
