@@ -2,6 +2,7 @@ title: Crafting a Great Command Line Tool
 time: 2018-11-08T13:03:32-05:00
 published_filename: 2020-01-04-crafting-a-great-command-line-tool.html
 guid: 84B349C4-2F1C-11EA-869E-909E2C992D10
+tags: best-practice
 
 I have created many command line tools and scripts throughout my career. Though the importance of these applications vary greatly (some are vital to achieve certain business goals, while some are simple and may only be run once or twice), the core design of these applications should remain relatively the same.
 

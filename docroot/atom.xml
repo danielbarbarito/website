@@ -4,7 +4,7 @@
   <title><![CDATA[Dan Barbarito]]></title>
   <link href="https://barbarito.me/atom.xml" rel="self" />
   <link href="https://barbarito.me" />
-  <updated>2020-01-04T13:19:37-05:00</updated>
+  <updated>2020-01-04T13:24:24-05:00</updated>
   <id>https://barbarito.me</id>
   <author>
     <name><![CDATA[Dan Barbarito]]></name>
@@ -17,7 +17,7 @@
     <title type="html"><![CDATA[Crafting a Great Command Line Tool]]></title>
     <link href="https://barbarito.me/2020-01-04-crafting-a-great-command-line-tool.html"/>
     <published>2018-11-08T13:03:32-05:00</published>
-    <updated>2020-01-04T13:13:23-05:00</updated>
+    <updated>2020-01-04T13:23:40-05:00</updated>
     <id>https://barbarito.me/2020-01-04-crafting-a-great-command-line-tool.html</id>
     <content type="html"><![CDATA[<p>I have created many command line tools and scripts throughout my career. Though the importance of these applications vary greatly (some are vital to achieve certain business goals, while some are simple and may only be run once or twice), the core design of these applications should remain relatively the same.</p>
 
