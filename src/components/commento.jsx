@@ -26,7 +26,7 @@ const Commento = ({ id }) => {
     // In case our #commento container exists we can add our commento script
     if (document.getElementById("commento")) {
       insertScript(
-        `http://comments.barbarito.me/js/commento.js`,
+        `https://comments.barbarito.me/js/commento.js`,
         `commento-script`,
         document.body
       )
