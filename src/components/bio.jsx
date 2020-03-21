@@ -35,7 +35,7 @@ const Bio = () => {
       }}
     >
       <p>
-        Written by <strong>{author}</strong> who lives and works as a Senior
+        <strong>{author}</strong> lives and works as a Senior
         Strategy Consultant and Full Stack Developer at IBM in New York City.
         You should follow him on{" "}
         <a href={`https://github.com/${social.github}`}>GitHub</a> and connect
