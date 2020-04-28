@@ -11,7 +11,7 @@ import Image from "gatsby-image"
 
 import { rhythm } from "../utils/typography"
 
-const Bio = () => {
+const Bio = ({ margin }) => {
   const data = useStaticQuery(graphql`
     query BioQuery {
       site {
@@ -31,15 +31,14 @@ const Bio = () => {
     <div
       style={{
         display: `flex`,
-        marginBottom: rhythm(2.5),
+        marginBottom: margin != undefined ? margin : rhythm(2.5),
       }}
     >
-      <p>
-        <strong>{author}</strong> lives and works as a Senior
-        Strategy Consultant and Full Stack Developer at IBM in New York City.
-        You should follow him on{" "}
-        <a href={`https://github.com/${social.github}`}>GitHub</a> and connect
-        with him on{" "}
+      <p style={{ marginBottom: rhythm(1) }}>
+        <strong>{author}</strong> lives and works as a Senior Strategy
+        Consultant and Full Stack Developer at IBM in New York City. You should
+        follow him on <a href={`https://github.com/${social.github}`}>GitHub</a>{" "}
+        and connect with him on{" "}
         <a href={`https://linkedin.com/in/${social.linkedin}`}>LinkedIn</a>.
       </p>
     </div>

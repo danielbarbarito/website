@@ -8,6 +8,12 @@ module.exports = {
       linkedin: `danbarbarito`,
       github: `danielbarbarito`,
     },
+    otherLinks: [
+      {
+        name: "Resume",
+        link: "https://resume.barbarito.me",
+      },
+    ],
   },
   plugins: [
     {
